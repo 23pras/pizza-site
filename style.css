@@ -9,11 +9,11 @@
   body {
     font-family: Arial, sans-serif;
   }
-
-  .img-section{
-    display:flex;
+  
+  .img-section {
+    display: flex;
   }
-  .img-section>img{
+  .img-section > img {
     width: 100%;
   }
   
@@ -100,12 +100,15 @@
   }
   
   #contact {
-    background: #999;
+    background: black;
   }
   
-
+  #menu {
+    background: black;
+  }
+  
   /* Reset CSS */
-* {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -124,11 +127,11 @@
     width: 100%;
     height: 100vh;
     background: url("images/pizza.jpg") no-repeat center center;
-    background-size: cover; 
+    background-size: cover;
     display: flex;
-    justify-content: flex-start; 
-    align-items: center; 
-    padding-left: 8%; 
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 8%;
     padding-top: 5%;
     color: white;
   }
@@ -156,63 +159,258 @@
     background: red;
     margin: 10px 0;
   }
-
+  
   .divider-3 {
     width: 400px;
     height: 5px;
     background: red;
-    color:red;
+    color: red;
     margin: 10px 0;
-  } 
+  }
   
-
+  .divider-4 {
+    width: 150px;
+    height: 4px;
+    background: red;
+    margin: 10px auto;
+  }
+  
   .section-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 80px 10%;
-    background: #ddd; 
-}
-
-.about-us {
+    background: #ddd;
+  }
+  
+  .section-3 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .all-item {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 100px;
+  }
+  
+  .left,
+  .right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .img-text {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .h-class {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  . {
+    display: flex;
+  }
+  
+  .menu {
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-container {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .menu-container h1 {
+    font-size: 2.5rem;
+    color: white;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .menu-item img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .menu-item div {
+    width: 50%;
+  }
+  
+  .menu-item p {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .about-us {
     text-align: center;
     margin-bottom: 20px;
-    color:white;
-}
-
-.about-us h1 {
+    color: white;
+  }
+  
+  .about-us h1 {
     font-size: 2.5rem;
-}
-
-.para-text {
+    font: Quattrocento;
+  }
+  
+  .para-text {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
     width: 100%;
-    max-width: 1000px; 
-}
-.text-container {
+    max-width: 1000px;
+  }
+  .text-container {
     flex: 1;
     text-align: left;
-}
-
-.img-div {
+  }
+  
+  .img-div {
     flex: 1;
-    text-align: right
-}
-
-.img-div img {
+    text-align: right;
+  }
+  
+  .img-div img {
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
-}  
+  }
   /* Paragraph */
   p {
     font-size: 1.2rem;
     margin-top: 10px;
-    color:white;
+    color: white;
+    font: ruda;
+  }
+  
+  .section-4 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: black;
+  }
+  
+  .section-4 > h1 {
+    color: white;
+  }
+  
+  .divider {
+    width: 150px;
+    height: 4px;
+    background: red;
+    margin: 10px auto;
+  }
+  
+  /* .carousel {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+  .carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-buttons button {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute; /* Change to absolute to position it relative to the carousel */
+  /* top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #prev {
+    left: -40px; /* Move left button outside the image */
+  /* } */
+  
+  /* #next {
+    right: -40px; /* Move right button outside the image */
+  /* }   * */
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hide images outside the container */
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for image change */
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+  .carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  
+  .carousel-buttons button {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  #prev {
+    left: 10px;
+  }
+  
+  #next {
+    right: 10px;
   }
   
   /* Responsive Design */
@@ -230,24 +428,33 @@
       font-size: 1rem;
     }
     .para-text {
-        flex-direction: column;
-        text-align: center;
+      flex-direction: column;
+      text-align: center;
     }
-
+  
     .text-container {
-        text-align: center;
+      text-align: center;
     }
-
+  
     .divider-3 {
-        margin: 0 auto 10px auto;
+      margin: 0 auto 10px auto;
     }
-
+  
     .img-div {
-        text-align: center;
+      text-align: center;
     }
-
+  
     .img-div img {
-        max-width: 400px;
+      max-width: 400px;
+    }
+    .all-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left,
+    .right {
+      width: 100%;
     }
   }
   
