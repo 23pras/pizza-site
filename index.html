@@ -60,11 +60,9 @@
         <div class="text-container">
           <div class="divider-3"></div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-            reprehenderit nam odit, libero numquam laborum ullam earum iste,
-            laboriosam praesentium quos blanditiis rerum vitae fuga repudiandae
-            sequi sit incidunt eos. At quod ipsum, eveniet molestiae accusamus
-            rerum eos quam dolor?
+            Welcome to Pizza-24x7, where passion meets flavor! 🍕
+            At Pizza-24x7, we believe that a great pizza is more than just dough, sauce, and cheese—it's an experience. 
+            Our journey began with a simple goal: to serve authentic, handcrafted pizzas made from the freshest ingredients and baked to perfection.
           </p>
         </div>
         <div class="img-div">
@@ -162,6 +160,9 @@
             <img src="/images/pizza.jpg" alt="Image 1" />
             <img src="/images/pizza.jpg" alt="Image 2" />
             <img src="/images/pizza.jpg" alt="Image 3" />
+            <img src="/images/pizza.jpg" alt="Image 3" />
+            <img src="/images/pizza.jpg" alt="Image 3" />
+
           </div>
         </div>
         <button id="next" class="carousel-btn">&#10095;</button>
@@ -264,7 +265,7 @@
       let index = 0;
 
       next.addEventListener("click", () => {
-        if (index < 2) {
+        if (index < 4) {
           index++;
           images.style.transform = `translateX(-${index * 100}%)`;
         }
